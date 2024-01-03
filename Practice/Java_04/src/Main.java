@@ -20,18 +20,18 @@ public class Main {
 
 //      Q2. 아래 주석은 위의 실습에서 진행한 score에 따라 grade를 출력하는 코드이다.
 //        이를 switch 조건문 기반으로 바꿔보세요.
-//        int score = 90;
-//        char grade = 0;
-//        if (score >= 90) {
-//            grade = 'A';
-//        } else if (score >= 80) {
-//            grade = 'B';
-//        } else if (score >= 70) {
-//            grade = 'C';
-//        } else {
-//            grade = 'F';
-//        }
-//        System.out.println("grade = " + grade);
+        int score = 90;
+        char grade = 0;
+        if (score >= 90) {
+            grade = 'A';
+        } else if (score >= 80) {
+            grade = 'B';
+        } else if (score >= 70) {
+            grade = 'C';
+        } else {
+            grade = 'F';
+        }
+        System.out.println("grade = " + grade);
 
 
     }
