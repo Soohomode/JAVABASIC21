@@ -5,15 +5,15 @@
 
 class Animal {
     String desc;
-    Animal() {
+    Animal() { // 생성자
         this.desc = "동물 클래스 입니다.";
     }
 
-    Animal(String desc) {
+    Animal(String desc) { // 오버로딩된 생성자
         this.desc = desc;
     }
 
-    public void printInfo() {
+    public void printInfo() { // 출력 메서드
         System.out.println(this.desc);
     }
 }
@@ -21,7 +21,9 @@ class Animal {
 class Cat extends Animal {
     String desc;
     Cat() {
-        this.desc = "고양이 입니다.";
+//        this.desc = "고양이 입니다.";
+//        super.desc = "고양이 입니다.";
+        super("고양이 입니다.");
     }
 }
 

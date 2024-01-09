@@ -6,10 +6,54 @@ public class Main {
 //      1. 반복문 - for
         System.out.println("== for ==");
 //      1-1. 기본 사용 방법
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println("===continue===");
+
+        for (int i = 0; i < 5; i++) {
+            if (i == 2) {
+                continue;
+            }
+
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println("===break===");
+
+        for (int i = 0; i < 5; i++) {
+            if (i == 2) {
+                break;
+            }
+
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
 
 //      1-2. for each
+        System.out.println("== for each ==");
+        int[] nums = {1, 2, 3, 4, 5};
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
 
+        for (int num : nums) {
+            System.out.println(num);
+        }
 
 //      2. 반복문 - while
         System.out.println("== while ==");
@@ -25,6 +69,16 @@ public class Main {
 //      ***
 //      *****
 //      *******
+        for (int i = 0; i < 8; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
 
 
 
@@ -32,6 +86,13 @@ public class Main {
 //          추가로, 10도, 20도, ... 10도 간격으로 물 온도를 출력하시오.
         int waterTemperature = 0;
 
+        while (waterTemperature < 100) {
+            waterTemperature++;
+
+            if (waterTemperature % 10 == 0) {
+                System.out.println("현재 온도 : " + waterTemperature + "도");
+            }
+        }
 
     }
 }
