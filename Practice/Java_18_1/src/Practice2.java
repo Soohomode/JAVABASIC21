@@ -1,6 +1,24 @@
+import java.util.Scanner;
 
 public class Practice2 {
     public static void solution() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("알파벳 입력 : ");
+        char input = sc.nextLine().charAt(0);
+        int output = 0;
+
+        int step = (int)'a' - (int)'A';
+
+        if (input >= 'a' && input <= 'z') { // 소문자 => 대문자
+            output = (int) input - step;
+            System.out.println("대문자 변환 : " + (char)output);
+        } else if (input >= 'A' && input <= 'Z') { // 대문자 => 소문자
+            output = (int) input + step;
+            System.out.println("소문자 변환 : " + (char)output);
+        } else {
+            System.out.println("입력값이 잘못되었습니다. (알파벳이 아님)");
+        }
 
     }
 
